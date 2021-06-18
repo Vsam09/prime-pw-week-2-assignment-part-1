@@ -7,7 +7,7 @@ let lastName = 4;
 // (remember, you already have variables for this, can you use those?)
 let fullName = 10;
 // 4 - Console log the value of `fullName`
-console.log('the value of fullName is', fullName);
+console.log('the value of fullName is:', fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 let luckyNumber = 2
 // 6 - Console log this sentence, adding in the variables you created above:
@@ -17,9 +17,11 @@ console.log('My name is Samson Vang, and I think 2 is a winner!')
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = false;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-
+let foodVar = 100;
+let food = 'sushi';
+console.log('My favorite food is:', food, foodVar );
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
-
+let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 
 // 11 - Add two pets to your `pets` variable
