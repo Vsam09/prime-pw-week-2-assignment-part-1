@@ -77,5 +77,16 @@ if(friendsPets > pets ){
 }
 console.log( 'mostPets');
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch( mostPets ){
+  case( pets > friendsPets ):
+  console.log( 'I have the most pets')
+  break;
+  case( friendsPets > pets ):
+  console.log( 'Friend has the most pets')
+  break;
+  default ( pets > friendsPets):
+  case( 'I have the most pets')
+  break;
+}
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
