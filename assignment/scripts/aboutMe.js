@@ -5,7 +5,7 @@ let firstName = 6;
 let lastName = 4;
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = 10;
+let fullName = firstName + lastName;
 // 4 - Console log the value of `fullName`
   console.log('the value of fullName is:', fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
@@ -17,9 +17,9 @@ let luckyNumber = 2;
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-let foodVar = 100;
-let food = 'sushi';
-  console.log('My favorite food is:', food, foodVar );
+let food = 100 ;
+let favoriteFood = 'sushi';
+  console.log('My favorite food is:', favoriteFood, food );
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
@@ -91,4 +91,4 @@ break;
   console.log('mostPets')
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-adventurous ? true : false;
+ adventurous ? true : false;
