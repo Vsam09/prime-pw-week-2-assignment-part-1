@@ -68,14 +68,16 @@ if( pets > allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = 30;
-if(pets > friendsPets ){
+let mostPets = pets == friendsPets;
+
+if( pets > friendsPets ){
   console.log( 'I have the most pets')
 }
-if(friendsPets > pets ){
+if( friendsPets > pets ){
   console.log( 'Friend has the most pets')
 }
-  console.log( 'mostPets');
+
+  console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 switch( mostPets ){
   case( pets > friendsPets ):
@@ -86,9 +88,11 @@ switch( mostPets ){
   break;
   case( pets > friendsPets ):
     console.log( 'I have the most pets')
-break;
+  break;
+  default: pets > friendsPets
+    console.log( 'mostPets')
+  break;
 }
-  console.log('mostPets')
-
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
  adventurous ? true : false;
+ console.log('Am I adventurous?', adventurous);
