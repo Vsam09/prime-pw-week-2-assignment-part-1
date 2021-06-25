@@ -96,5 +96,5 @@ switch (mostPets) {
 
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
- adventurous ? 'Im going fishing' : 'Guess my hats hanging back up';
+ adventurous ? true : false;
  console.log('Am I adventurous?', adventurous);
