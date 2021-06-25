@@ -17,15 +17,16 @@ let luckyNumber = 2;
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
-let food = 100 ;
-let favoriteFood = 'sushi';
-  console.log('My favorite food is:', favoriteFood, food );
+let food = 'sushi, steak, roast beef, pho' ;
+  console.log('My favorite food is:', food );
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 1;
 // 11 - Add two pets to your `pets` variable
-pets = 2;
+let newPets = 2;
+pets = newPets;
+  console.log( 'Rescued two new pets', newPets);
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
@@ -51,10 +52,10 @@ if( luckyNumber == 2 && adventurous == true ){
 if( pets < allowedPets ){
   console.log( 'I can have more pets!' );
 }
-if( pets == allowedPets){
+else if( pets == allowedPets){
   console.log( 'I have enough pets!');
 }
-if( pets > allowedPets){
+else if( pets > allowedPets){
   console.log( 'Oh no, I have too many pets!');
 }
 
@@ -68,30 +69,31 @@ if( pets > allowedPets){
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = pets == friendsPets;
+let mostPets = pets || friendsPets;
 
 if( pets > friendsPets ){
   console.log( 'I have the most pets')
 }
-if( friendsPets > pets ){
+else if( friendsPets > pets ){
   console.log( 'Friend has the most pets')
 }
+  console.log( 'mostPets', mostPets);
 
-  console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-switch( mostPets ){
-  case( pets > friendsPets ):
-    console.log( 'I have the most pets')
-  break;
-  case( friendsPets > pets ):
-    console.log( 'Friend has the most pets')
-  break;
-  case( pets > friendsPets ):
-    console.log( 'I have the most pets')
-  break;
-  default: pets > friendsPets
-    console.log( 'mostPets')
-  break;
+switch (mostPets) {
+  case (pets):
+      console.log('Ive got the most pets')
+    break;
+  case (friendsPets):
+      console.log('Friend does have the most pets')
+      break;
+  case (pets):
+      console.log('Ive got the most pets')
+      break;
+  default:
+      console.log('You really have the most pets')
+      break;
+
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
  adventurous ? true : false;
