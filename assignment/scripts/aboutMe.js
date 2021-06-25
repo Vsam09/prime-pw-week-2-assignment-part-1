@@ -26,7 +26,7 @@ let friendsPets = 1;
 // 11 - Add two pets to your `pets` variable
 let newPets = 2;
 pets = newPets;
-  console.log( 'Rescued two new pets', newPets);
+  console.log( 'Rescued', newPets, 'new pets');
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
@@ -96,5 +96,5 @@ switch (mostPets) {
 
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
- adventurous ? true : false;
+ adventurous ? 'Im going fishing' : 'Guess my hats hanging back up';
  console.log('Am I adventurous?', adventurous);
